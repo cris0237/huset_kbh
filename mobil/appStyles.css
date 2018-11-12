@@ -9,9 +9,13 @@
 }
 
 
+h4 {
+    color: aliceblue;
+    font-family: 'Avenir Next', sans-serif;
+}
 
 html {
-    font-family: Garamond, Times, "Times New Roman", "serif";
+    font-family: 'Avenir Next', sans-serif;
     background: white;
 }
 
@@ -27,6 +31,7 @@ html {
 img {
     max-width: 100%;
     height: auto;
+
 }
 
 h1 {
@@ -34,11 +39,15 @@ h1 {
     color: aqua;
     background: black;
 
-}
 
-p {
-    color: black;
-}
+
+    p {
+        color: black;
+    }
+
+    h3 {
+        color: black;
+    }
 
 }
 
