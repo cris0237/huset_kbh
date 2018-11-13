@@ -52,6 +52,7 @@ button {
     margin: 5px;
 }
 
+
 /* Dropdown Button */
 
 .dropbtn {
@@ -234,9 +235,8 @@ img {
     flex-grow: 1;
     flex-basis: 300px;
 }
-<<<<<<< HEAD
 
-#myBtn {
+<<<<<<< HEAD #myBtn {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -268,27 +268,26 @@ img {
 #myBtn:hover {
     background-color: #555;
     /* Add a dark-grey background on hover */
-=======
-footer {
-    display: flex;
-    color: #fff;
-    font-family: Avenir;
-    position: relative;
-    color: #808183;
-    background: black;
-    padding: 20px 20px 20px 20px;
-    font-size: 11px;
+    =======footer {
+        display: flex;
+        color: #fff;
+        font-family: Avenir;
+        position: relative;
+        color: #808183;
+        background: black;
+        padding: 20px 20px 20px 20px;
+        font-size: 11px;
 
-}
+    }
 
-.footer_boks {
-    flex-grow: 1;
-    flex-basis: 10px;
-    padding: 10px;
-}
+    .footer_boks {
+        flex-grow: 1;
+        flex-basis: 10px;
+        padding: 10px;
+    }
 
-footer a {
-    text-decoration: none;
-    color: white;
->>>>>>> origin/master
-}
+    footer a {
+        text-decoration: none;
+        color: white;
+        > > > > > > > origin/master
+    }
