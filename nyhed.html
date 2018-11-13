@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+    <link rel="stylesheet" href="nyhed.css">
+    <link rel="shortcut icon" type="image/x-icon" href="huset_ikon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="Huset_logo_6_W.png" alt="huset_logo" width="50%" height="20%">
+        <br>
+        <button><a href="index.html" class="btn">Events</a></button>
+        <button><a href="#" class="btn">Skab Events</a></button>
+        <button><a href="job.html" class="btn">Job</a></button>
+        <button><a href="#" class="btn">Kontakt</a></button>
+        <button><a href="om.html" class="btn">Om Huset</a></button>
+        <button><a href="nyhed.html" class="btn">Nyhedsbrev</a></button>
+
+    </header>
+
+
+
+    <div class="pynt"></div>
+
+    <div class="textnyhed">
+        <h1>Tilmeld dig Husets nyhedsbrev</h1>
+        <p>Få nyheder, anbefalinger og særlige konkurrencer og tilbud ved at tilmelde dig vores nyhedsbrev. Det udkommer ca. en gang om måneden. Du kan altid framelde dig igen.</p>
+    </div>
+
+    <div class="pynt"></div>
+
+
+    <form>
+        <input id="navn" type="text" placeholder="Navn" required>
+
+        <input id="email" type="email" placeholder="Email" required><br>
+
+        <input type="submit" value="send">
+
+    </form>
+
+
+
+    <footer>
+        <div class="footer_boks">
+            <h4>Find os<br>
+                <a href="https://www.google.com/maps?ll=55.676372,12.574715&z=14&t=m&hl=en-US&gl=DK&mapclient=embed&cid=15814497259688967861">Rådhusstræde 13, 1466 København K</a></h4>
+        </div>
+        <div class="footer_boks">
+            <h4>Kontakt os på<br> info@huset-kbh.dk <br> 21 51 21 51</h4>
+        </div>
+        <div class="footer_boks">
+            <h4>Job<br>
+                <a href="job.php">Klik her for at se ledige stillinger eller bliv frivillig.</a> </h4>
+        </div>
+    </footer>
+
+
+
+
+    < ? php include="header.html" ;>
+        </?>
+        <script src="">
+            let svartekst = "";
+            document.querySelector("form").addEventListener("submit", ajaxCall);
+            async function ajaxCall(e) {
+                e.preventDefault();
+                let navn = this.querySelector("input[type=text]").value;
+                let url = "formtest1.php?navn=" + navn;
+                let svar = await fetch(url);
+                svartekst = await svar.text();
+                show();
+                this.querySelector("input[type=text]").value = "";
+            }
+
+            function show(response) {
+                document.querySelector("#response").textContent = svartekst;
+        </script>
+</body>
+
+</html>

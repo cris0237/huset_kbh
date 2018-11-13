@@ -1,0 +1,180 @@
+header img {
+    width: 490px;
+    padding: 15px;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+
+header {
+    margin-bottom: 20px;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    background: black;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+
+.btn {
+    color: #999;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    padding: 20px 20px;
+    color: #1b1b1b;
+}
+
+button {
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: transparent;
+    margin: 5px;
+}
+
+.menu-item {
+    flex-grow: 1;
+}
+
+nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.textnyhed {
+    margin-top: 10%;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Avenir Next', sans-serif;
+    color: #000000;
+}
+
+p {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Avenir Next', sans-serif;
+    color: #000000;
+}
+
+
+form {
+    max-width: 50%;
+    margin: auto;
+    background-color: black;
+    padding: 2%;
+    margin-top: 1%;
+    height: 100%;
+
+}
+
+input {
+    width: 30%;
+    border: solid 1px black;
+    padding: 20px;
+    margin: 2%;
+    font-size: 1em;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #CC3C28;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.pynt {
+    width: 100%;
+    height: 8px;
+    background: #CC3C28;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    display: flex;
+    color: #fff;
+    font-family: Avenir;
+    position: relative;
+    color: #808183;
+    background: black;
+    padding: 20px 20px 20px 20px;
+    font-size: 11px;
+    margin-bottom: 0%;
+
+}
+
+.footer_boks {
+    flex-grow: 1;
+    flex-basis: 10px;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
