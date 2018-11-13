@@ -20,7 +20,7 @@ header {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 130px;
     background: white;
 }
 
@@ -52,81 +52,34 @@ button {
     margin: 5px;
 }
 
-/* Dropdown Button */
 
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+.btn1 {
+    color: #CC3C28;
+    background: #000000;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Avenir Next', sans-serif;
+
+}
+
+.btn1:hover {
     border: none;
-    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    background: #000000;
+    padding: 20px 20px;
 }
 
-/* Dropdown button on hover & focus */
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #2980B9;
+button1 {
+    border: none;
 }
 
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
-.show {
-    display: block;
-}
-
-.menu-item {
-    flex-grow: 1;
-}
-
-nav {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background: white;
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
+button1 {
+    padding: 10px 20px;
+    background: #000000;
+    margin: 5px;
 }
 
 
@@ -152,15 +105,69 @@ h1 {
 img {
     width: 80%;
     align-self: bottom;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #om_huset {
-    width: 90%;
+    padding: 2%;
+}
+
+#bipbar {
+    padding: 2%;
+}
+
+#musikcafe {
+    padding: 2%;
+}
+
+#organisation {
+    padding: 2%;
+}
+
+#om_huset {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#om_huset .venstre {
+#bipbar {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#musikcafe {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#organisation {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#om_huset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#bipbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#musikcafe {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#organisation {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
@@ -171,7 +178,29 @@ img {
     flex-basis: 300px;
 }
 
+
+#bipbar .teksth {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#musikcafe .teksth {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+
+#organisation .teksth {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
 .billedev {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.tekstv {
     flex-grow: 1;
     flex-basis: 300px;
 }
@@ -182,30 +211,16 @@ img {
     display: block;
 }
 
-#omhuset .hoejre {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
 
-#om_huset .tekstv {
-    flex-grow: 1;
-    flex-basis: 300px;
-}
-
-.pynt {
-    width: 100%;
-    height: 8px;
-    background: #CC3C28;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#om_huset {
+#evoo {
     padding: 2%;
 }
 
-#evoo {
+#husetsbio {
+    padding: 2%;
+}
+
+#historie {
     padding: 2%;
 }
 
@@ -213,11 +228,41 @@ img {
     color: white;
 }
 
+#husetsbio p {
+    color: white;
+}
+
+#historie p {
+    color: white;
+}
+
 #evoo h1 {
     color: white;
 }
 
+#husetsbio h1 {
+    color: white;
+}
+
+#historie h1 {
+    color: white;
+}
+
 #evoo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+}
+
+#husetsbio {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+}
+
+#historie {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -230,55 +275,40 @@ img {
     margin: 10px;
 }
 
+#husetsbio .venstre {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#historie .venstre {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
 #evoo .teksth {
     flex-grow: 1;
     flex-basis: 300px;
 }
-<<<<<<< HEAD
 
-#myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: red;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 4px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
+#husetsbio .teksth {
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
-#myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
-=======
-footer {
-    display: flex;
-    color: #fff;
-    font-family: Avenir;
-    position: relative;
-    color: #808183;
-    background: black;
-    padding: 20px 20px 20px 20px;
-    font-size: 11px;
+#historie .teksth {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
 
+
+.pynt {
+    width: 100%;
+    height: 8px;
+    background: #CC3C28;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer_boks {
@@ -290,5 +320,4 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
->>>>>>> origin/master
 }
