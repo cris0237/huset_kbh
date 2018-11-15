@@ -20,8 +20,25 @@ footer {
 header {
     display: flex;
     flex-wrap: wrap;
+
+}
+img{
+    width: 30px;
+    height: 30px;
+
 }
 
+header .some img {
+    max-width: 60px;
+}
+
+.some {
+    max-width: 20px;
+}
+
+.img:hover {
+    opacity: 0.7;
+}
 
 .boks_parent {
     display: grid;
