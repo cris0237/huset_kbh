@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    width: 100%;
+}
+
 header img {
     width: 490px;
     padding: 15px;
@@ -36,6 +40,9 @@ main {
     background: white;
 }
 
+p {
+    padding: 20px;
+}
 
 .btn {
     color: #999;
@@ -62,6 +69,35 @@ button {
 button {
     padding: 10px 20px;
     background: transparent;
+    margin: 5px;
+}
+
+.btn1 {
+    color: #CC3C28;
+    background: #000000;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Avenir Next', sans-serif;
+
+}
+
+.btn1:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #000000;
+    padding: 20px 20px;
+}
+
+button1 {
+    border: none;
+}
+
+button1 {
+    padding: 10px 20px;
+    background: #000000;
     margin: 5px;
 }
 
@@ -115,11 +151,15 @@ main {
     color: white;
 }
 
-#projekter {
-    margin-top: 10px;
+section p {
+    max-width: 50%;
 }
 
 #projekter p {
+    color: black;
+}
+
+#projekter2 p {
     color: black;
 }
 
@@ -128,8 +168,7 @@ main {
 }
 
 iframe {
-    width: 30%;
-    height: 70%;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
@@ -148,7 +187,13 @@ iframe {
     justify-content: center;
     text-align: center;
     align-items: center;
+    height: 30vw;
 
+}
+
+.video_div {
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 #video h2 {
@@ -165,7 +210,6 @@ iframe {
 
 #slags_frillig {
     background: black;
-    margin-bottom: 10px;
 }
 
 #slags_frillig h2 {
@@ -288,58 +332,29 @@ h4 {
     color: #000000;
 }
 
-<<<<<<< HEAD #myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: red;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 4px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
+#formbox {
+    background: black;
 }
 
-#myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
-    =======footer {
-        display: flex;
-        color: #fff;
-        font-family: Avenir;
-        position: relative;
-        color: #808183;
-        background: black;
-        padding: 20px 20px 20px 20px;
-        font-size: 11px;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: Avenir;
+    position: relative;
+    color: #808183;
+    background: black;
+    padding: 20px 20px 20px 20px;
+    font-size: 11px;
+}
 
-    }
+.footer_boks {
+    flex-grow: 1;
+    flex-basis: 10px;
+    padding: 10px;
+}
 
-    .footer_boks {
-        flex-grow: 1;
-        flex-basis: 10px;
-        padding: 10px;
-    }
-
-    footer a {
-        text-decoration: none;
-        color: white;
-        > > > > > > > origin/master
-    }
+footer a {
+    text-decoration: none;
+    color: white;
+}
