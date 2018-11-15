@@ -141,6 +141,16 @@ iframe {
 
 }
 
+#video {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
 #video h2 {
     color: white;
 }
@@ -277,9 +287,8 @@ h4 {
     font-family: 'Avenir Next', sans-serif;
     color: #000000;
 }
-<<<<<<< HEAD
 
-#myBtn {
+<<<<<<< HEAD #myBtn {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -311,27 +320,26 @@ h4 {
 #myBtn:hover {
     background-color: #555;
     /* Add a dark-grey background on hover */
-=======
-footer {
-    display: flex;
-    color: #fff;
-    font-family: Avenir;
-    position: relative;
-    color: #808183;
-    background: black;
-    padding: 20px 20px 20px 20px;
-    font-size: 11px;
+    =======footer {
+        display: flex;
+        color: #fff;
+        font-family: Avenir;
+        position: relative;
+        color: #808183;
+        background: black;
+        padding: 20px 20px 20px 20px;
+        font-size: 11px;
 
-}
+    }
 
-.footer_boks {
-    flex-grow: 1;
-    flex-basis: 10px;
-    padding: 10px;
-}
+    .footer_boks {
+        flex-grow: 1;
+        flex-basis: 10px;
+        padding: 10px;
+    }
 
-footer a {
-    text-decoration: none;
-    color: white;
->>>>>>> origin/master
-}
+    footer a {
+        text-decoration: none;
+        color: white;
+        > > > > > > > origin/master
+    }
