@@ -176,6 +176,10 @@ img {
     flex-basis: 300px;
 }
 
+#om_huset .billedeh {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
 
 #bipbar .teksth {
     flex-grow: 1;
@@ -209,6 +213,10 @@ img {
     display: block;
 }
 
+.venstre {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #evoo {
     padding: 2%;
@@ -307,6 +315,19 @@ img {
     background: #CC3C28;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+footer {
+    display: flex;
+    color: #fff;
+    font-family: Avenir;
+    position: relative;
+    color: #808183;
+    background: black;
+    padding: 20px 20px 20px 20px;
+    font-size: 11px;
+
 }
 
 .footer_boks {
