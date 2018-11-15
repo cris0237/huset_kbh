@@ -124,25 +124,19 @@ img {
 }
 
 #om_huset {
-    width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #bipbar {
-    width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #musikcafe {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#organisation {
-    width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -157,6 +151,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    max-width: 100%;
 }
 
 #musikcafe {
@@ -169,6 +164,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #om_huset .teksth {
@@ -255,21 +253,21 @@ img {
 }
 
 #evoo {
-    width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background: black;
 }
 
 #husetsbio {
-    width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background: black;
 }
 
 #historie {
-    width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background: black;
@@ -334,6 +332,8 @@ footer {
     flex-grow: 1;
     flex-basis: 10px;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer a {
