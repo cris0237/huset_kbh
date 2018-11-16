@@ -39,6 +39,12 @@ header .some img {
 .img:hover {
     opacity: 0.7;
 }
+.some img {
+    width: 10%;
+
+    align-content: center;
+
+}
 
 .boks_parent {
     display: grid;
