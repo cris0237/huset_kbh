@@ -27,6 +27,19 @@
 
 
     <main>
+        <div class="menu">
+            <button id="filterall">Alle</button>
+            <button id="filtermusik">Musik</button>
+            <button id="filterfilm">Film</button>
+            <div class="subcat">
+                <button id="jazz">Jazz</button>
+                <button id="rock">Rock</button>
+                <button id="alt">Alt</button>
+                <button id="folk">Folk</button>
+                <button id="pop">Pop</button>
+            </div>
+
+        </div>
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
@@ -188,6 +201,96 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
+
+        let minTemplate = document.querySelector("#event-template");
+        let templateModtager = document.querySelector("#eventscontainer");
+        async function getJson() {
+            let eventObjekt = await fetch("https://ansaari.dk/kea/huset/wordpress/wp-json/wp/v2/events");
+            let events = await eventObjekt.json();
+            let mitValg;
+            //find events der indeholder de valgte kategorier
+            let musik = events.filter(function(e) {
+                return e.categories.includes(17);
+            });
+            let film = events.filter(function(e) {
+                return e.categories.includes(19)
+            });
+
+
+            function valgte(vc, genre) {
+                mitValg = events.filter(function(e) {
+                    return e.categories.includes(vc);
+
+                });
+                console.log(mitValg, genre);
+                visValgte(mitValg, genre);
+            }
+
+
+            visValgte(events);
+
+            document.querySelector('#filtermusik').addEventListener("click", function(e) {
+                visValgte(musik, "musik");
+                //console.log("target",e.target.id);
+            });
+            document.querySelector('#filterfilm').addEventListener("click", function() {
+                visValgte(film, "film");
+            });
+            document.querySelector('#filterall').addEventListener("click", function() {
+                visValgte(events, "all");
+            });
+            document.querySelector('#jazz').addEventListener("click", function() {
+                valgte(21, "musik");
+            });
+            document.querySelector('#rock').addEventListener("click", function() {
+                valgte(20, "musik");
+            });
+            document.querySelector('#alt').addEventListener("click", function() {
+                valgte(24, "musik");
+            });
+            document.querySelector('#folk').addEventListener("click", function() {
+                valgte(23, "musik");
+            });
+            document.querySelector('#pop').addEventListener("click", function() {
+                valgte(22, "musik");
+            });
+
+        }
+
+
+        function visValgte(evt, cat) {
+            templateModtager.innerHTML = "";
+
+            if (cat == "musik") {
+                document.querySelector(".subcat").style.display = "block";
+            } else {
+                document.querySelector(".subcat").style.display = "none";
+            }
+            // console.log(cat);
+
+            evt.forEach(function(event) {
+
+                let klon = minTemplate.cloneNode(true).content;
+
+                klon.querySelector("section").classList.add(event.acf.genre);
+                klon.querySelector(".data-title").textContent = event.title.rendered;
+                klon.querySelector(".data-genre").textContent = event.acf.genre;
+                klon.querySelector(".data-img").setAttribute("src", event.acf.billede);
+                klon.querySelector(".data-dato").textContent = "Dato: " + event.acf.dato;
+                klon.querySelector(".data-tid").textContent = "Dørene åbner kl.: " + event.acf.tid;
+                klon.querySelector(".data-sted").textContent = "Sted.: " + event.acf.sted; + "";
+
+                klon.querySelector(".data-pris").textContent = "Entre: " + event.acf.entre + ".kr";
+
+                klon.querySelector(".linktosingle").setAttribute("href", "singleevent.html?id=" + event.id);
+                templateModtager.appendChild(klon);
+            });
+
+        }
+
+
+        //læs script når DOM er hentet
+        document.addEventListener("DOMContentLoaded", getJson);
     </script>
 </body>
 
