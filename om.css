@@ -105,9 +105,9 @@ h1 {
 img {
     align-self: bottom;
 }
+
 .some img {
     width: 10%;
-
     align-content: center;
 
 }
@@ -188,13 +188,28 @@ img {
     flex-basis: 300px;
 }
 
+#bipbar .billedeh {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
 #musikcafe .teksth {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#musikcafe .billedeh {
     flex-grow: 1;
     flex-basis: 300px;
 }
 
 
 #organisation .teksth {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#organisation .billedeh {
     flex-grow: 1;
     flex-basis: 300px;
 }
