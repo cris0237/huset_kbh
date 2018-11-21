@@ -71,7 +71,7 @@ nav a {
 
 .some img {
     width: 10%;
-    margin-top: 10px;
+
     align-content: center;
 
 }
@@ -79,11 +79,15 @@ nav a {
 #bokse {
     background: black;
     width: 100%;
+    padding: 20px;
 }
 
 .boks_parent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .boks_container {
@@ -91,6 +95,8 @@ nav a {
     flex-wrap: wrap;
     max-width: 500px;
     padding: 15px;
+    margin-bottom: 40px;
+    border: 1px solid red;
 }
 
 .boks_tekst {
@@ -98,6 +104,11 @@ nav a {
     flex-grow: 1;
     background: white;
     max-width: 100%;
+    font-weight: 400;
+}
+
+.boks_tekst p {
+    margin: 10px;
 }
 
 .boks_billede img {
@@ -151,6 +162,18 @@ button {
     border: none;
 }
 
+.menu {
+    background: black;
+    max-height: 90px;
+    margin-top: 120px;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.menu button {
+    color: white;
+}
+
 .footer_container {
     display: flex;
     flex-wrap: wrap;
@@ -188,12 +211,15 @@ button {
     width: 100%;
     position: relative;
     margin: auto;
-    height: 590px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 .slideshow-container img {
     height: auto;
-    margin-top: 200px;
+    margin-top: 40px;
 }
 
 .mySlides fade {
@@ -206,7 +232,17 @@ button {
 
 .mySlides {
     display: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 500px;
 
+}
+
+.slideshow-container img {
+    width: 90%;
+    max-height: 500px;
+    max-width: 500px;
+    margin-top: 40px;
 }
 
 /* Next & previous buttons */
@@ -219,9 +255,9 @@ button {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 38px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
@@ -231,6 +267,10 @@ button {
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    margin-left: -50%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -244,11 +284,14 @@ button {
 /* Number text (1/3 etc) */
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    color: #000000;
+    font-size: 19px;
+    padding: 8px 162px;
     position: absolute;
     top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+
 }
 
 /* The dots/bullets/indicators */
@@ -262,6 +305,7 @@ button {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-top: 50px;
 }
 
 .active,
@@ -296,11 +340,6 @@ button {
     }
 }
 
-.slideshow-container img {
-    width: 100%;
-    max-height: 300px;
-
-}
 
 footer {
     display: flex;

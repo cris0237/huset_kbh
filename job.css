@@ -329,32 +329,68 @@ iframe {
 
 h4 {
     font-family: 'Avenir Next', sans-serif;
-    color: #000000;
+    color: #808183;
 }
 
 #formbox {
     background: black;
 }
 
-footer {
+
+.footer_container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.footer_boks {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.footer {
+    font-size: 8px;
     color: #fff;
+    clear: both;
+    display: block;
+    letter-spacing: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    text-decoration: none;
+    width: 210px;
+    margin: auto;
+    margin-top: 400px;
+}
+
+footer {
+    display: flex;
+    color: #0000;
     font-family: Avenir;
     position: relative;
     color: #808183;
     background: black;
     padding: 20px 20px 20px 20px;
     font-size: 11px;
+    text-align: center;
+
 }
 
 .footer_boks {
     flex-grow: 1;
     flex-basis: 10px;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer a {
     text-decoration: none;
     color: white;
+}
+.some img {
+    width: 10%;
+    align-content: center;
+
 }
